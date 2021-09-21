@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log('0是石头\n1是剪刀\n2是布')
+        function game(me){
+            var group = ['石头','剪刀','布'];
+            var computer = Math.ceil(Math.random()*3) - 1;
+            if(computer - me == -1 || (me ==0 && computer == 2)){
+                console.log(' 你输了，再接再厉！');
+            }else if(computer - me == 1 || (me == 2 && computer == 0)){
+                console.log(' 你赢了，别骄傲哦！')
+            }else if(computer == me){
+                console.log(' 咱俩平局，真的好巧哦！')
+            }
+            console.log(' 你出的是:', group[me], '\n', '电脑出的是:', group[computer])
+            return '再次运行game()就可以继续玩了！'
+        }
+    </script>
+</body>
+</html>

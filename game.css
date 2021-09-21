@@ -1,0 +1,160 @@
+@import url('./css/reset.css');
+.wrapper{
+    margin-top: 50px;
+    margin-left: 350px;
+    width: 700px;
+    height: 500px;
+    border: 2px solid ccc;
+    background-color: #fff;
+    box-shadow: 1px 3px 4px #999;
+    border-radius: 150px 220px;
+    padding: 40px;
+}
+.wrapper .aside{
+    height: 100%;
+    width: 180px;
+    box-sizing: border-box;
+   
+}
+.wrapper .user{
+    text-align: center;
+    float: left;
+    border-right: 1px solid #8a2be2;
+}
+.wrapper .user .operation ul {
+    display: inline-block;
+}
+.wrapper .user .operation ul li{
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #8a2be2;
+    border-radius: 10px 40px 80px 150px;
+    margin: 20px 0;
+    width: 143px;
+    height: 118px;
+}
+.wrapper .user .operation ul .box2{
+    background: url('./img/game1.jpg') 0 0 / 500px 118px no-repeat;
+}
+.wrapper .user .operation ul .box1{
+    background: url('./img/game1.jpg') -187px 0 / 500px 118px no-repeat;
+}
+.wrapper .user .operation ul .box3{
+    background: url('./img/game1.jpg') -373px 0 / 500px 118px no-repeat;
+    background-color: #fff;
+}
+ .clicked2{
+    background: url('./img/game.jpg') 0 0 / 500px 118px no-repeat;
+}
+ .clicked1{
+    background: url('./img/game.jpg') -187px 0 / 500px 118px no-repeat;
+}
+ .clicked3{
+    background: url('./img/game.jpg') -373px 0 / 500px 118px no-repeat;
+    background-color: #fff;
+}
+
+.resultBox{
+    height: 100%;
+    width: 340px;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.resultBox .leftText{
+    position: absolute;
+    left: 10px;
+    top: calc(40% - 1em);
+    width: 60px;
+}
+.resultBox .result{
+    width: 200px;
+    position: absolute;
+    left: calc(50% - 100px);
+    top: calc(70% - 1em);
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-stretch: expanded;
+    font-weight: 100;
+    color: red;
+}
+.resultBox .rightText{
+    top: calc(40% - 1em);
+    position: absolute;
+    right: 10px;
+    width: 60px;
+}
+.resultBox .choice{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: 100;
+    color:blueviolet;
+}
+.resultBox .introduction h2{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.resultBox .introduction{
+    margin-left: 89px;
+    padding: 20px;
+    font-size: 10px;
+    color: #8a2be2;
+    width: 120px;
+    text-align: left;
+    line-height: 20px;
+    border: 2px solid;
+    border-radius: 70px 30px;
+}
+.resultBox .start,
+.resultBox .reset{
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    background-color:blueviolet;
+    margin-top: 280px;
+    color: #fff;
+    border-radius: 10px 40px 20px 80px;
+    
+}
+.resultBox .reset{
+    border-radius:  40px 10px 80px 20px;
+}
+.resultBox .start:hover,
+.resultBox .reset:hover{
+    color: chocolate;
+}
+.wrapper .computer{
+    text-align: center;
+    float: right;
+    border-left: 1px solid #8a2be2;
+}
+.wrapper .computer .operation{
+    margin-top: 180px;
+    display: inline-block;
+    width: 143px;
+    height: 118px;
+    border: 2px solid #8a2be2;
+    border-radius: 40px 10px 130px 80px;
+    overflow: hidden;
+}
+.wrapper .computer .operation ul li{
+    width: 143px;
+    height: 118px;
+}
+.wrapper .computer .operation ul .clicked2{
+    background: url('./img/game.jpg') 0 0 / 500px 118px no-repeat;
+}
+.wrapper .computer .operation ul .clicked1{
+    background: url('./img/game.jpg') -187px 0 / 500px 118px no-repeat;
+}
+.wrapper .computer .operation ul .clicked3{
+    background: url('./img/game.jpg') -373px 0 / 500px 118px no-repeat;
+    background-color: #fff;
+}
